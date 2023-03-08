@@ -10,7 +10,7 @@
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg" style="background-color: gold;">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: gold;">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <i class="bi bi-airplane-fill"></i>
@@ -21,10 +21,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#busca">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mais-vendidos">Promoções</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
                     </li>
                 </ul>
                 <i class="bi bi-person-circle ml-left" style="font-size: 30px;"></i>
@@ -85,8 +94,55 @@
           </div>
     </div>
 
-    <div class="container mais-vendidos">
-        <h2>Mais vendidos</h2>
+    <div class="container busca" id="busca">
+      <h3>Selecione seu destino...</h3>
+      <form>
+        <div class="card text-dark bg-warning mb-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="input-group input-group-md">
+                  <span class="input-group-text" id="inputGroup-sizing-lg">Origem</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="input-group input-group-md">
+                  <span class="input-group-text" id="inputGroup-sizing-lg">Destino</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="input-group input-group-md">
+                  <span class="input-group-text" id="inputGroup-sizing-lg">Data de ida</span>
+                  <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="input-group input-group-md">
+                  <span class="input-group-text" id="inputGroup-sizing-lg">Data de volta</span>
+                  <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="input-group input-group-md">
+                  <span class="input-group-text" id="inputGroup-sizing-lg">Nº de viajantes</span>
+                  <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+              </div>
+              <div class="col-6 col-sm-12">
+                <div class="input-group input-group-lg">
+                  <button type="submit" class="btn btn-primary">Buscar pacotes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+      
+    <div class="container" id="mais-vendidos">
+        <h4>Promoções</h4>
         <div class="row justify-content-center">
             <div class="card" style="width: 15rem;">
                 <img src="/images/card1.jpg" class="card-img-top" alt="...">

@@ -51,3 +51,20 @@ footer{
 .card-body .input-group-md{
     padding: 15px;
 }
+
+.contato{
+    margin-top: 40px;
+}
+
+.contato i{
+    font-size: 1.3em;
+    margin-right: 15px;
+}
+
+.contato input{
+    margin: 5px;
+}
+
+.contato button{
+    margin-top: 15px;
+}
